@@ -1,0 +1,160 @@
+/* DEVELOPER: Mithil Patel, IS117-xxx, Fall 2025 */
+
+/* Basic page setup */
+body {
+    background: #111;          /* simple dark background */
+    color: #f8f9fa;            /* light text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* NAVBAR – simpler, no gradient */
+.navbar {
+    background-color: #000;    /* plain black */
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #0dcaf0 !important; /* Bootstrap "info" color */
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    color: #0dcaf0 !important;
+}
+
+.search-input {
+    background: #222;
+    border: 1px solid #444;
+    color: #f8f9fa;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+/* CAROUSEL – simple dark overlay, no fancy glow */
+.hero-carousel {
+    margin-top: 1.5rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.hero-image {
+    max-height: 420px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* simple dark overlay so text is readable */
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    bottom: 14%;
+    max-width: 520px;
+}
+
+.carousel-caption-custom h2 {
+    font-weight: 600;
+}
+
+.carousel-caption-custom p {
+    max-width: 460px;
+    font-size: 0.95rem;
+}
+
+/* basic pill style, less flashy */
+.neon-pill {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid #0dcaf0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #0dcaf0;
+}
+
+/* CARD SECTION – simple cards, no glow */
+.card-section {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.info-card {
+    background-color: #181818;              /* flat dark */
+    border: 1px solid #333;                 /* basic border */
+    border-radius: 0.75rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);/* small shadow */
+    height: 100%;
+}
+
+.info-card h5 {
+    color: #0dcaf0;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.info-card p {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+.info-card .card-body {
+    padding: 1.25rem;
+}
+
+/* FOOTER – basic */
+footer {
+    margin-top: auto;
+    background: #000;
+    border-top: 1px solid #222;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #0dcaf0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE TWEAKS – keep simple */
+@media (max-width: 768px) {
+    .carousel-caption-custom {
+        left: 6%;
+        right: 6%;
+        bottom: 10%;
+        max-width: none;
+    }
+
+    .carousel-caption-custom h2 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-caption-custom p {
+        font-size: 0.9rem;
+    }
+}
