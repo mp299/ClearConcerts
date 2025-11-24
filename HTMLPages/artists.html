@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DEVELOPER: Mithil Patel, IS117-xxx, Fall 2025 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artists - Concert Insight</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../CSSPages/Styles.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Concert Insight</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="artists.html">Artists</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="venues.html">Venues</a>
+                    </li>
+
+                    <!-- Events dropdown -->
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="events.html"
+                            id="eventsDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Events
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html">Explore Events</a></li>
+                            <li><a class="dropdown-item" href="upcoming.html">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="past.html">Past Event Reviews</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ExperienceSubmission.html">Submit Experience</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex mt-3 mt-lg-0" role="search">
+                    <input
+                        class="form-control me-2 search-input"
+                        type="search"
+                        placeholder="Search artists, venues, events"
+                        aria-label="Search"
+                    />
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-4">
+        <h1 class="mb-3">Artists</h1>
+        <p class="mb-4">
+            Here are a few well-known artists to show how concert experiences could be summarized. Each entry gives a quick
+            overview of the type of show a new fan might expect.
+        </p>
+
+        <!-- Artist 1: Post Malone -->
+        <section class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img
+                        src="../images/artist1.jpg"
+                        class="img-fluid rounded"
+                        alt="Post Malone performing on stage"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <h2 class="h5">Post Malone</h2>
+                    <p class="mb-1"><strong>Typical venues:</strong> Arenas and large festival stages</p>
+                    <p class="mb-1"><strong>Show style:</strong> Mix of rap, rock, and sing-along hits</p>
+                    <p class="mb-0">
+                        Post Malone’s shows usually feel like a mix of a party and a sing-along. Fans report that he
+                        performs a long set with most of his popular songs, and the crowd is very active but generally
+                        friendly. Expect lights, visuals, and a lot of people trying to record their favorite moments.
+                        This type of show is good for someone who wants a big crowd experience with songs they recognize.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist 2: Taylor Swift -->
+        <section class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img
+                        src="../images/artist2.jpg"
+                        class="img-fluid rounded"
+                        alt="Taylor Swift performing at a stadium show"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <h2 class="h5">Taylor Swift</h2>
+                    <p class="mb-1"><strong>Typical venues:</strong> Stadiums and large arenas</p>
+                    <p class="mb-1"><strong>Show style:</strong> Highly produced, themed eras and long setlists</p>
+                    <p class="mb-0">
+                        Taylor Swift’s concerts are known for being very organized but also very intense in terms of
+                        crowd size and energy. Fans often mention detailed stage designs, outfit changes, and long
+                        setlists that move through different “eras” of her music. Lines for entry and merch can be long,
+                        and many people arrive hours early. This type of show is best for someone who enjoys large
+                        productions and doesn’t mind planning ahead for travel and timing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist 3: Lil Uzi Vert -->
+        <section class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img
+                        src="../images/artist3.jpg"
+                        class="img-fluid rounded"
+                        alt="Lil Uzi Vert performing with crowd and lights"
+                    />
+                </div>
+                <div class="col-md-8">
+                    <h2 class="h5">Lil Uzi Vert</h2>
+                    <p class="mb-1"><strong>Typical venues:</strong> Arenas, festivals, and large clubs</p>
+                    <p class="mb-1"><strong>Show style:</strong> High-energy rap with mosh pits and heavy bass</p>
+                    <p class="mb-0">
+                        Lil Uzi Vert’s concerts are usually very energetic, with loud bass, jumping crowds, and frequent
+                        movement on stage. Fans often describe mosh pits, lots of standing, and a more intense overall
+                        environment. Security can be strict, but the crowd can still feel chaotic at times. This type of
+                        show is best for someone comfortable in louder, more packed spaces who is looking for a very
+                        active concert experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <span>Copyright © Mithil Patel, 2025</span>
+            <div class="mt-2 mt-md-0">
+                <a href="#" class="me-3">Terms of Service</a>
+                <a href="#">Privacy Statement</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
