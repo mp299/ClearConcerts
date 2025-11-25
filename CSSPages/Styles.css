@@ -1,33 +1,30 @@
-/* DEVELOPER: Mithil Patel, IS117-xxx, Fall 2025 */
+/* DEVELOPER: Mithil Patel, IS117-001, Fall 2025 */
 
-/* Basic page setup */
 body {
-    background: #111;          /* simple dark background */
-    color: #f8f9fa;            /* light text */
+    background: #111;          
+    color: #f8f9fa;           
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-
-/* NAVBAR – simpler, no gradient */
 .navbar {
-    background-color: #000;    /* plain black */
+    background-color: #000;    
 }
 
 .navbar-brand {
     font-weight: 600;
     letter-spacing: 0.5px;
-    color: #0dcaf0 !important; /* Bootstrap "info" color */
+    color: #0dcaf0 ; 
 }
 
 .nav-link {
-    color: #f8f9fa !important;
+    color: #f8f9fa ;
     font-size: 0.95rem;
 }
 
 .nav-link:hover {
-    color: #0dcaf0 !important;
+    color: #0dcaf0 ;
 }
 
 .search-input {
@@ -40,7 +37,6 @@ body {
     color: #888;
 }
 
-/* CAROUSEL – simple dark overlay, no fancy glow */
 .hero-carousel {
     margin-top: 1.5rem;
     border-radius: 0.75rem;
@@ -57,7 +53,6 @@ body {
     object-fit: cover;
 }
 
-/* simple dark overlay so text is readable */
 .carousel-overlay {
     position: absolute;
     inset: 0;
@@ -81,7 +76,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* basic pill style, less flashy */
 .neon-pill {
     display: inline-block;
     padding: 0.25rem 0.75rem;
@@ -93,17 +87,16 @@ body {
     color: #0dcaf0;
 }
 
-/* CARD SECTION – simple cards, no glow */
 .card-section {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
 
 .info-card {
-    background-color: #181818;              /* flat dark */
-    border: 1px solid #333;                 /* basic border */
+    background-color: #181818;              
+    border: 1px solid #333;                
     border-radius: 0.75rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);/* small shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     height: 100%;
 }
 
@@ -122,7 +115,6 @@ body {
     padding: 1.25rem;
 }
 
-/* FOOTER – basic */
 footer {
     margin-top: auto;
     background: #000;
@@ -141,7 +133,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* RESPONSIVE TWEAKS – keep simple */
 @media (max-width: 768px) {
     .carousel-caption-custom {
         left: 6%;
